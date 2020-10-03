@@ -1,0 +1,40 @@
+<div class="box">
+    <div class="row transbox">
+        <div class="info scrollbar" id="scrollbarStyle">
+            <div class="col">
+                <h2>About my personal info</h2>
+            </div>
+            <div class="col">
+                <mat-card class="zoom">
+                    <mat-card-title> Name : {{personalDetails.fname}} {{personalDetails.lname}} </mat-card-title>
+                    <mat-card-subtitle> Dob : {{personalDetails.dob}}</mat-card-subtitle>
+                    <mat-card-content> MailId : {{personalDetails.mail}}</mat-card-content>
+                    <mat-card-content> Mobile number : <span *ngFor="let item of personalDetails.mobileNo">{{item}}
+                        </span></mat-card-content>
+                </mat-card>
+            </div>
+            <div class="col">
+                <h3>Education</h3>
+                <mat-card class="zoom" *ngFor="let item of personalDetails.education">
+                    <mat-card-title> Degree : {{item.degree}} </mat-card-title>
+                    <mat-card-subtitle>University : {{item.university}}</mat-card-subtitle>
+                    <mat-card-content> Parecentage : {{item.parecentage}}% </mat-card-content>
+                    <mat-card-content> Year : {{item.year}}</mat-card-content>
+                </mat-card>
+            </div>
+            <div class="col">
+                <h3>Intrests</h3>
+                <mat-card class="zoom">
+                    <mat-card-content *ngFor="let item of personalDetails.intrests"> {{item}} </mat-card-content>
+                </mat-card>
+            </div>
+            <div class="col">
+                <h3>Languages</h3>
+                <mat-card class="zoom" *ngFor="let item of personalDetails.languages">
+                    <mat-card-subtitle> Name : {{item.name}} </mat-card-subtitle>
+                    <mat-card-content> Profesional Policy : {{item.profesionalPolicy}} </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="box">
+    <div class="row transbox ">
+        <div class="info scrollbar" id="scrollbarStyle">
+            <div class="col">
+                <h2>portfolio</h2>
+                <p>See my works below. Unless explicitly stated otherwise,<b> all their front-end parts were completely
+                        done
+                        by me.</b></p>
+            </div>
+            <div class="col" *ngFor="let item of projectInfo;let i = index" [ngClass]="{'pt-2': i != 0}">
+                <mat-card class="zoom">
+                    <mat-card-title> {{item.title}} </mat-card-title>
+                    <mat-card-subtitle> Domain : {{item.domain}} </mat-card-subtitle>
+                    <mat-card-content>Front End : {{item.frontEnd}}</mat-card-content>
+                    <mat-card-content>Back End : {{item.backEnd}}</mat-card-content>
+                    <mat-card-content>Description : {{item.description}}</mat-card-content>
+                    <mat-card-content>Roles Responsibilities : {{item.rolesResponsibilities}}</mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>

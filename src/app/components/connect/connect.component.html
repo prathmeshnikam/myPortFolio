@@ -1,0 +1,67 @@
+<div class="box">
+  <div class="row transbox">
+    <div class="info scrollbar" id="scrollbarStyle">
+      <div class="col">
+        <h2>CONTACT</h2>
+        <p>Have a question or want to work together?
+        </p>
+      </div>
+      <div class="col">
+        <mat-card class="zoom">
+          <form class="example-form" [formGroup]='userInfo' novalidate class="form">
+            <div class="row set-pad">
+              <mat-form-field class="example-full-width">
+                <mat-label>Name</mat-label>
+                <input matInput formControlName='name' placeholder="Enter Name">
+                <mat-error *ngIf="userInfoError.name.errors && userInfoError.name.errors.required">
+                  Name is <strong>required</strong>
+                </mat-error>
+                <mat-error *ngIf="userInfoError.name.errors && userInfoError.name.errors.minlength">
+                  Name must be at least 2 characters
+                </mat-error>
+                <mat-error *ngIf="userInfoError.name.errors && userInfoError.name.errors.maxlength">
+                  Name must be 25 characters only
+                </mat-error>
+              </mat-form-field>
+            </div>
+            <div class="row set-pad">
+              <mat-form-field class="example-full-width">
+                <mat-label>Email</mat-label>
+                <input matInput formControlName='email' placeholder="Enter Email">
+                <mat-error *ngIf="userInfoError.email.errors && userInfoError.email.errors.required">
+                  Email is <strong>required</strong>
+                </mat-error>
+                <mat-error *ngIf="userInfoError.email.errors && userInfoError.email.errors.maxlength">
+                  Email must be 25 characters only
+                </mat-error>
+                <mat-error *ngIf="userInfoError.email.errors && userInfoError.email.errors.pattern">
+                  Please enter <strong>valid</strong> email id
+                </mat-error>
+              </mat-form-field>
+            </div>
+            <div class="row set-pad">
+              <mat-form-field class="example-full-width">
+                <mat-label>Leave a comment</mat-label>
+                <textarea matInput formControlName='comment' placeholder="Enter comment"></textarea>
+                <mat-error *ngIf="userInfoError.comment.errors && userInfoError.comment.errors.required">
+                  Comment is <strong>required</strong>
+                </mat-error>
+                <mat-error *ngIf="userInfoError.comment.errors && userInfoError.comment.errors.minlength">
+                  Comment must be at least 4 characters
+                </mat-error>
+                <mat-error *ngIf="userInfoError.comment.errors && userInfoError.comment.errors.maxlength">
+                  Comment must be 125 characters only
+                </mat-error>
+              </mat-form-field>
+            </div>
+            <div class="row set-pad">
+              <div class="col-12 set-button">
+                <button mat-raised-button color="primary" (click)='submitData()'>SUBMIT</button>
+                <button mat-raised-button color="warn" class="ml-4" (click)='clearData()'> CLEAR </button>
+              </div>
+            </div>
+          </form>
+        </mat-card>
+      </div>
+    </div>
+  </div>

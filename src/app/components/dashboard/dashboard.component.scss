@@ -1,0 +1,161 @@
+ .header {
+     background-color: rgba(0, 153, 0, 0.75);
+     font-family: "Rubik", sans-serif;
+     letter-spacing: 3px;
+     z-index: 999;
+ }
+
+ .box .info {
+     position: fixed;
+     top: 15%;
+     margin: 0 auto;
+     left: 30%;
+     right: 0;
+     text-align: left;
+     color: white;
+
+     h1 {
+         font-size: 4em;
+         font-weight: 500;
+
+         text-transform: none !important;
+     }
+
+     p {
+         font-size: 3em;
+         font-weight: 300;
+         text-transform: none;
+     }
+
+ }
+
+
+
+ .site-sidebar {
+     top: 0;
+     bottom: 0;
+     left: 0;
+     position: fixed;
+     z-index: 2;
+     width: 25%;
+     font-size: 14px;
+     color: #fff;
+     text-align: left;
+     background-color: rgba(145, 13, 13, .8);
+ }
+
+ .person .person-content .person-title {
+     font-size: 22px;
+     font-weight: 500;
+ }
+
+ .person {
+     color: inherit;
+ }
+
+ .person .person-content .person-subtitle {
+     font-size: 16px;
+     font-weight: 300;
+     text-transform: uppercase;
+ }
+
+ .site-sidebar .site-sidebar-inner {
+     position: relative;
+     height: 100%;
+     overflow-y: auto;
+     -webkit-overflow-scrolling: touch;
+     -ms-overflow-style: -ms-autohiding-scrollbar;
+     padding: 45px 40px;
+     overflow: hidden;
+ }
+
+ .site-sidebar .person {
+     text-align: center;
+ }
+
+ .person .person-avatar {
+     border-radius: 50%;
+     margin-bottom: 10px;
+ }
+
+ .person .person-avatar .avatar {
+     width: 152px;
+     height: 152px;
+     border-radius: 50%;
+ }
+
+ .person .person-content {
+     margin-left: -40px;
+     margin-right: -40px;
+ }
+
+ .person .person-content .person-title {
+     font-size: 22px;
+     font-weight: 500;
+ }
+
+ .person-content .person-title,
+ .site-sidebar .block .block-title,
+ h1,
+ h2,
+ h5 {
+     text-transform: uppercase;
+     color: white;
+ }
+
+ .main-navigation a {
+     color: #ccc;
+     color: rgba(255, 255, 255, .6);
+     display: block;
+ }
+
+ .main-navigation ul,
+ .site-sidebar .posts-list,
+ .tech-icons,
+ .tech-tags,
+ .timeline>ul {
+     list-style: none;
+ }
+
+ .main-navigation ul,
+ .main-navigation ul>li {
+     margin: 0;
+     padding: 0;
+ }
+
+ .site-sidebar .block+.block {
+     margin-top: 45px;
+ }
+
+ .site-sidebar .block-social {
+     font-size: 22px;
+ }
+
+ .site-sidebar .block .block-title {
+     font-size: 11px;
+     font-weight: 300;
+     color: #aaa;
+     color: rgba(255, 255, 255, .5);
+     margin-bottom: 15px;
+ }
+
+ .social-icons a {
+     color: #fff;
+     color: rgba(255, 255, 255, .6);
+ }
+
+
+ .button.button-icon {
+     padding: 0;
+     margin-right: .2em;
+ }
+
+
+ @media screen and (max-width: 600px) {
+
+     .box .info {
+         top: 35% !important;
+         left: 5% !important;
+     }
+
+ }

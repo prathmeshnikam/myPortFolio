@@ -1,0 +1,25 @@
+<div class="box">
+    <div class="row transbox">
+        <div class="info scrollbar" id="scrollbarStyle">
+            <div class="col">
+                <h2>Summary </h2>
+            </div>
+            <div class="col">
+                <mat-card class="zoom" *ngFor="let item of summaryData.summary">
+                    <mat-card-title> {{item.title}} </mat-card-title>
+                    <mat-card-subtitle> {{item.description}}</mat-card-subtitle>
+                </mat-card>
+            </div>
+            <div class="col">
+                <h3>Certification</h3>
+                <mat-card class="zoom" *ngFor="let item of summaryData.certifications">
+                    <mat-card-title> Name : {{item.name}} </mat-card-title>
+                    <mat-card-subtitle>Source : {{item.source}}</mat-card-subtitle>
+                    <mat-card-content> Gred : {{item.gred}} </mat-card-content>
+                    <mat-card-content> Location : {{item.location}}</mat-card-content>
+                    <mat-card-content> Year : {{item.year}}</mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>

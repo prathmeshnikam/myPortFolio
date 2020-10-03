@@ -1,0 +1,90 @@
+ 
+@import "~bootstrap/scss/bootstrap.scss";
+
+body {
+  font-family: cursive !important;
+}
+
+.zoom {
+  margin: 10px 0px 10px 0px !important;
+  padding: 3px;
+  background-color: #BBDEFB;
+
+  transition: transform .1s;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.zoom:hover {
+  background-color: #64B5F6;
+  transform: scale(1.05);
+}
+
+// set page on main container 
+
+.box .info {
+  position: fixed;
+  top: 0%;
+  margin: 0 auto;
+  left: 25%;
+  right: 0%;
+  color: white;
+  font-family: cursive !important;
+  h1 {
+    font-size: 2em;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  h2,
+  h3 {
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 1.4em;
+    font-weight: 400;
+    text-transform: none;
+  }
+}
+
+// Add Style for scroll bar
+.scrollbar {
+  overflow-y: auto;
+  max-height: 630px;
+  overflow-x: hidden;
+
+  .col {
+    padding: 0px 33px;
+  }
+}
+
+
+#scrollbarStyle::-webkit-scrollbar-track {
+  background-color: #F5F5F5;
+  border-radius: 10px;
+}
+
+#scrollbarStyle::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5;
+}
+
+#scrollbarStyle::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear,
+      left bottom,
+      left top,
+      color-stop(0.44, rgb(122, 153, 217)),
+      color-stop(0.72, rgb(73, 125, 189)),
+      color-stop(0.86, rgb(28, 58, 148)));
+}
+
+
+// Media css added
+@media screen and (max-width: 600px) {
+  .box .info {
+    top: 10% !important;
+    left: 5% !important;
+  }
+}

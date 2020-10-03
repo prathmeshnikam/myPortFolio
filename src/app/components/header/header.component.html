@@ -1,0 +1,91 @@
+<div class="box">
+  <div class="row">
+    <div class="site-sidebar">
+      <div class="site-sidebar-inner h-card">
+        <a routerLink="/" routerLinkActive="active" rel="me" class="person u-url">
+          <div class="person-avatar u-photo">
+            <img src="assets/prathImg.jpg" alt="" class="avatar">
+          </div>
+          <div class="person-content">
+            <h1 class="person-title p-name">Prathmesh Nikam</h1>
+            <h2 class="person-subtitle p-job-title p-note">Front End Software Engineer</h2>
+          </div>
+        </a>
+
+        <nav class="block main-navigation">
+          <div class="navigation-extendable">
+            <ul>
+              <li class=""><a (click)="goToNext('portfolio')" routerLinkActive="active">Portfolio</a></li>
+              <li class=""><a (click)="goToNext('about-me')" routerLinkActive="active">About Me</a></li>
+              <li class=""><a (click)="goToNext('skills')" routerLinkActive="active">Skills</a></li>
+              <li class=""><a (click)="goToNext('summary')" routerLinkActive="active">Summary</a></li>
+              <li class=""><a (click)="goToNext('connect')" routerLinkActive="active">Connect</a></li>
+              <li class=""><a (click)="openPdf()">My CV</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="block block-social">
+          <div class="block-title">Get in touch</div>
+          <div class="block-content">
+            <div class="social-icons">
+              <a rel="me" href="mailto:prathmesh.nikam3@gmail.com" class="button button-icon u-email"
+                title="mail: mailto:prathmesh.nikam3@gmail.com">
+                <i class="fa fa-envelope"></i>
+              </a>
+
+              <a rel="me" href="https://www.linkedin.com/in/prathmesh-nikam-824b55124/" target="_blank"
+                class="button button-icon" title="linkedin: Prathmesh_Nikam">
+                <i class="fa fa-linkedin-square"></i>
+              </a>
+
+              <a rel="me" href="https://github.com/prathmeshnikam" target="_blank" class="button button-icon"
+                title="github: prathmeshnikam">
+                <i class="fa fa-github-square"></i>
+              </a>
+
+              <a rel="me" href="https://www.facebook.com/prathmesh.nikam3/" target="_blank" class="button button-icon"
+                title="facebook: prathmeshnikam">
+                <i class="fa fa-facebook-square"></i>
+              </a>
+
+              <a rel="me" href="https://twitter.com/prathmeshnikam3" target="_blank" class="button button-icon"
+                title="twitter: @jtompl">
+                <i class="fa fa-twitter-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="header">
+        <div class="row">
+          <div class="person-content">
+            <div class="col">
+              <h1 class="person-title p-name">Prathmesh Nikam</h1>
+              <h2 class="person-subtitle p-job-title p-note">Front End Software Engineer</h2>
+            </div>
+            <div class="col col-2 pointer">
+              <i class="fa fa-bars" (click)="showHeader()"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row subheader" id="smallHeader">
+        <nav class="block main-navigation">
+          <div class="navigation-extendable">
+            <ul>
+              <li class=""><a (click)="goToNext('portfolio')" routerLinkActive="active">Portfolio</a></li>
+              <li class=""><a (click)="goToNext('about-me')" routerLinkActive="active">About Me</a></li>
+              <li class=""><a (click)="goToNext('skills')" routerLinkActive="active">Skills</a></li>
+              <li class=""><a (click)="goToNext('summary')" routerLinkActive="active">Summary</a></li>
+              <li class=""><a (click)="goToNext('connect')" routerLinkActive="active">Connect</a></li>
+              <li class=""><a (click)="openPdf()">My CV</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>

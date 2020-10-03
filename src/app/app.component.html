@@ -1,0 +1,16 @@
+<div class="container-fluid img">
+  <div class="row">
+    <app-header></app-header>
+  </div>
+  <div class="box">
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <main [@routeAnimation]="addAnimationRoute(outlet)">
+          <router-outlet #outlet="outlet"> </router-outlet>
+        </main>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-loader [hidden]="!showLoading"></app-loader>
